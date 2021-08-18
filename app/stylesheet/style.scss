@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
+// mixin in to make mida query easy because im lazy
+// @include mobile (use wtih nesting)
+$mobile-width: 375px;
+$desktop-width: 1440px;
+
+@mixin mobile {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+//reset for scss
 *, *:before, *:after{
     box-sizing: border-box;
 }
@@ -9,8 +21,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    font-family: "Josefin Sans", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
@@ -22,10 +33,19 @@ footer, header, nav, section, main{
 
 body{
     line-height: 1;
+    background-color: hsl(235, 24%, 19%);
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ol, ul{
     list-style: none;
+    border-radius: 5px;
+    background-color: hsl(235, 24%, 19%);
 }
 
 blockquote, q{
@@ -42,14 +62,46 @@ table{
     border-spacing: 0;
 }
 
-input{
-    -webkit-appearance: none;
-    border-radius: 0;
+.attribution { 
+    font-size: 11px;
+    position: fixed; 
+    bottom: 10px;
+    color: hsl(234, 39%, 85%);
+a {
+    color: hsl(220, 98%, 61%)
+}}
+
+#myDIV{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #myInput{
+        background-color: hsl(235, 24%, 19%);
+        padding: 15px 5px;
+        margin: 10px;
+        border: black;
+        border-radius: 5px;
+    }
+
+    input::placeholder{
+    color: hsl(234, 39%, 85%);
+    }
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center;
-a {
-    color: hsl(228, 45%, 44%);
-}}
+.pp{
+    border: 1px solid rgb(21, 255, 0);
+    padding: 5px;
+}
+
+//display flex per container
+//need to set up main colunm, trying to use use flex like theyre three blocks on theyre side
+//Body normal content direction
+//Div + ul 90• flip

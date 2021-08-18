@@ -9,8 +9,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  font-family: "Josefin Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -25,10 +24,26 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
+  background-color: #25273c;
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ol, ul {
   list-style: none;
+  border-radius: 5px;
+  background-color: #25273c;
 }
 
 blockquote, q {
@@ -45,16 +60,62 @@ table {
   border-spacing: 0;
 }
 
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
 .attribution {
   font-size: 11px;
-  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  color: #cacde8;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #3a7bfd;
+}
+
+#myDIV {
+  border: 1px solid red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myDIV h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#myDIV #myInput {
+  background-color: #25273c;
+  padding: 15px 5px;
+  margin: 10px;
+  border: black;
+  border-radius: 5px;
+}
+
+#myDIV input::-webkit-input-placeholder {
+  color: #cacde8;
+}
+
+#myDIV input:-ms-input-placeholder {
+  color: #cacde8;
+}
+
+#myDIV input::-ms-input-placeholder {
+  color: #cacde8;
+}
+
+#myDIV input::placeholder {
+  color: #cacde8;
+}
+
+.pp {
+  border: 1px solid #15ff00;
+  padding: 5px;
 }
