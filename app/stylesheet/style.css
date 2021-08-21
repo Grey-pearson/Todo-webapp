@@ -24,8 +24,8 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
-  background-color: #25273c;
-  background-image: url(./images/bg-desktop-dark.jpg);
+  background-color: white;
+  background-image: url(./images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   font-size: 18px;
   display: -webkit-box;
@@ -42,8 +42,6 @@ body {
 
 ol, ul {
   list-style: none;
-  border-radius: 5px;
-  background-color: #25273c;
 }
 
 blockquote, q {
@@ -71,51 +69,84 @@ table {
   color: #3a7bfd;
 }
 
-#myDIV {
-  border: 1px solid red;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+.content {
+  min-width: 40%;
+  border: 1px solid #b3ff00;
+  margin: 20px;
+}
+
+.content .title {
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#myDIV h1 {
-  font-size: 20px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 35px;
+  color: white;
   font-weight: 700;
+  margin: 40px 0px;
+  letter-spacing: 10px;
 }
 
-#myDIV #myInput {
-  background-color: #25273c;
-  padding: 15px 5px;
-  margin: 10px;
+.content #myInput, .content li {
+  background-color: white;
+  padding: 20px 45px;
+  font-size: 20px;
+  width: 100%;
   border: black;
+  margin: 20px 0px;
+}
+
+.content input::-webkit-input-placeholder {
+  color: #9394a5;
+}
+
+.content input:-ms-input-placeholder {
+  color: #9394a5;
+}
+
+.content input::-ms-input-placeholder {
+  color: #9394a5;
+}
+
+.content input::placeholder {
+  color: #9394a5;
+}
+
+#myInput {
   border-radius: 5px;
+  border: #25273c;
+  margin-bottom: 10px;
 }
 
-#myDIV input::-webkit-input-placeholder {
-  color: #cacde8;
+.list {
+  -webkit-box-shadow: 0px 5px 10px red;
+          box-shadow: 0px 5px 10px red;
 }
 
-#myDIV input:-ms-input-placeholder {
-  color: #cacde8;
+.li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: solid 2px brown;
 }
 
-#myDIV input::-ms-input-placeholder {
-  color: #cacde8;
+button {
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: black;
+  background-color: linear-gradient #57ddff to #c058f3;
 }
 
-#myDIV input::placeholder {
-  color: #cacde8;
-}
-
-.pp {
-  border: 1px solid #15ff00;
-  padding: 5px;
+p {
+  padding: 20px 45px;
+  font-size: 20px;
+  color: #484b6a;
 }

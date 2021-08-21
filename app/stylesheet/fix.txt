@@ -1,0 +1,25 @@
+html:
+top{
+    "todo" + moon
+}
+
+input{
+    same styling as li but seperated and has ligher text
+    (but not marked off text)
+}
+
+main content{
+    list{
+        pp
+    }
+    bottom bar{
+        pp
+    }
+}
+
+text{
+    "drag and drop" just need to make it stay in place
+}
+attribution{
+    already handeled just need to make it stay in place
+}
