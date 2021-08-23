@@ -10,10 +10,14 @@ input{
 
 main content{
     list{
-        pp
+        button + words
     }
     bottom bar{
-        pp
+        -(num) items left
+        -all
+        -active
+        -completed
+        -clear completed
     }
 }
 
@@ -22,4 +26,14 @@ text{
 }
 attribution{
     already handeled just need to make it stay in place
+}
+
+scss:
+top{
+    space text and moon(find way to swap moon to sun) out corectly
+}
+todo{style}
+
+body{
+
 }
