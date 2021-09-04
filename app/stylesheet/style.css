@@ -2,6 +2,8 @@
 html {
   --primary: #000;
   --secondary: #fff;
+  --svg: url(./images/icon-moon.svg)
+;
 }
 
 *, *:before, *:after {
@@ -109,6 +111,15 @@ table {
   color: #9394a5;
 }
 
+.svg {
+  background-image: var(--svg);
+  color: white;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  min-width: 50px;
+  min-height: 50px;
+}
+
 #myInput {
   border-radius: 5px;
   border: #25273c;
@@ -160,5 +171,8 @@ p {
   html {
     --primary: #fff;
     --secondary: #000;
+  }
+  .svg {
+    --svg: url(./images/icon-sun.svg);
   }
 }

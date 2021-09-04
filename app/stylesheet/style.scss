@@ -5,7 +5,8 @@ $primary-light: #000;
 $secondary-light: #fff;
 $primary-dark: #fff;
 $secondary-dark: #000;
-$svg-moon: pp'
+$svg-moon: url(./images/icon-moon.svg);
+$svg-sun: url(./images/icon-sun.svg);
 // mixin in to make mida query easy because im lazy
 // @include mobile (use wtih nesting)
 $mobile-width: 375px;
@@ -17,9 +18,10 @@ $desktop-width: 1440px;
   }
 }
 
-html{
+html {
     --primary: #{$primary-light};
     --secondary: #{$secondary-light};
+    --svg: #{$svg-moon}
 }
 
 //reset for scss
@@ -104,6 +106,15 @@ table{
     }
 }
 
+.svg{
+    background-image: var(--svg);
+    color: white;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    min-width: 50px;
+    min-height: 50px;
+}
+
 #myInput{
     border-radius: 5px;
     border: hsl(235, 24%, 19%);
@@ -156,4 +167,8 @@ a {
         --primary: #{$primary-dark};
         --secondary: #{$secondary-dark};
     }
+    .svg{
+        --svg: #{$svg-sun};
+    }
+
 }
