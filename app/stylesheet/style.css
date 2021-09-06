@@ -66,11 +66,10 @@ table {
 
 .content {
   width: 500px;
-  margin: 20px;
   border: 1px solid #b3ff00;
 }
 
-.title {
+.content .title {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -78,20 +77,24 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 35px;
   color: white;
   font-weight: 700;
   margin: 40px 0px;
+}
+
+h1 {
+  font-size: 40px;
   letter-spacing: 10px;
+  max-width: 100px;
 }
 
 .svg {
   background-image: var(--svg);
-  color: white;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-origin: content-box;
-  min-width: 50px;
-  min-height: 50px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
 }
 
 #input {
@@ -99,6 +102,7 @@ table {
   padding: 20px 45px;
   font-size: 20px;
   width: 100%;
+  border-radius: 5px;
   border: black;
   margin: 20px 0px;
 }
