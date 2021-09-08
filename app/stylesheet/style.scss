@@ -77,23 +77,25 @@ table{
     width: 500px;
     //margin: 20px;
     border: 1px solid rgb(179, 255, 0);
-
-    //orient and size correctly
-    //h1 and svg
-    .title{
-        flex-direction: row;
-        //align-items: baseline;
-        justify-content: space-between;
-        color: white;
-        font-weight: 700;
-        margin: 40px 0px;
-    }
 }
 
-h1{
+//orient and size correctly
+//h1 and svg
+.title{
+    flex-direction: row;
+    //align-items: baseline;
+    //justify-content: space-between;
+    color: white;
+    font-weight: 700;
+    margin: 40px 0px;
+    border: solid 1px pink;
+}
+
+h1 {
     font-size: 40px;
     letter-spacing: 10px;
-    max-width: 100px;
+    max-width: 200px;
+    margin: 0;
 }
 
 //your styling a div, not the svg the svg is the background
@@ -103,7 +105,8 @@ h1{
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    overflow: hidden
+    overflow: hidden;
+    margin: 0;
 }
 
 //bigger and bordered

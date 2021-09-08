@@ -69,23 +69,22 @@ table {
   border: 1px solid #b3ff00;
 }
 
-.content .title {
+.title {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   color: white;
   font-weight: 700;
   margin: 40px 0px;
+  border: solid 1px pink;
 }
 
 h1 {
   font-size: 40px;
   letter-spacing: 10px;
-  max-width: 100px;
+  max-width: 200px;
+  margin: 0;
 }
 
 .svg {
@@ -95,6 +94,7 @@ h1 {
   width: 40px;
   height: 40px;
   overflow: hidden;
+  margin: 0;
 }
 
 #input {
