@@ -80,7 +80,7 @@ table {
   border: solid 1px pink;
 }
 
-h1 {
+.todo {
   font-size: 40px;
   letter-spacing: 10px;
   max-width: 200px;
@@ -103,7 +103,6 @@ h1 {
   font-size: 20px;
   width: 100%;
   border-radius: 5px;
-  border: black;
   margin: 20px 0px;
 }
 
@@ -133,7 +132,6 @@ input::placeholder {
   padding: 20px 45px;
   font-size: 20px;
   width: 100%;
-  border: black;
   margin: 20px 0px;
 }
 
